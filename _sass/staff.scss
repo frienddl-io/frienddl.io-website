@@ -1,0 +1,71 @@
+#about {
+	padding-top: 0px;
+
+	.black-lives-matter {
+		padding: 25px;
+		background-color: #000;
+		border-radius: 100px;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	h3 {
+		font-size: 1.38em;
+		color: #C6C6C6;
+	}
+
+	div {
+		margin-bottom: 40px;
+	}
+}
+
+.staff {
+	margin-top: 0px;
+	padding: 0;
+	list-style: none;
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	text-align: center;
+
+	li {
+		box-sizing: border-box;
+		width: 100%;
+
+		@media #{$tablet} {
+			@include flex(1, 1, 45%);
+		}
+
+		@media #{$desktop} {
+			@include flex(1, 1, 29%);
+		}
+
+	}
+
+	.square-image {
+		width: 200px;
+		height: 200px;
+
+		img {
+			border-radius: 200px;
+		}
+	}
+
+	#dev-icon {
+		width: auto !important;
+	}
+
+	.name {
+		font-size: 1.3em;
+		margin-top: 20px;
+	}
+
+	.position {
+		color: #bbb;
+	}
+}
+
+li {
+	color: #fff;
+}

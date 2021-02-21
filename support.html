@@ -1,0 +1,56 @@
+---
+title: Support
+heading: Support
+description: Send your questions, comments, questions, bugs, or enhancements
+---
+
+<p id="sub-description" class="center">
+	Make sure to check the known
+	<a
+		target="_blank"
+		href="https://github.com/frienddl-io/frienddl.io-support/projects/2">bugs</a>
+	&
+	<a
+		target="_blank"
+		href="https://github.com/frienddl-io/frienddl.io-support/projects/1">enhancements</a>
+	before submitting
+</p>
+<div class="contact-box">
+	<form method="post" action="{{ site.contact_settings.form_action }}" id="contact-form" class="contact-form">
+
+		<div class="contact-form__item">
+			<label class="contact-form__label">Email Address *</label>
+			<input id="email" type="text" name="email" placeholder="Your email address..." class="contact-form__input" required>
+		</div>
+
+		<div class="contact-form__item">
+			<label class="contact-form__label">Name *</label>
+			<input id="name" type="text" name="name" placeholder="Your name..." class="contact-form__input">
+		</div>
+
+		<div class="contact-form__item">
+			<label class="contact-form__label">Message *</label>
+			<textarea id="message" name="message" placeholder="Your message..." class="contact-form__textarea" required></textarea>
+		</div>
+
+		<input type="hidden" name="_next" value="{{ site.contact_settings.confirmation_url }}" />
+		<input type="hidden" name="_subject" value="{{ site.contact_settings.email_subject }}" />
+		<input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="">
+
+		<div class="contact-form__item center">
+			<input type="submit" value="{{ site.contact_settings.send_button_text }}">
+		</div>
+
+	</form>
+
+	<div class="contact-details">
+		<h3 class="editable">Emails</h3>
+		<p>
+			Creates a GitHub issue: <a href="mailto:frienddlio@fire.fundersclub.com">frienddlio@fire.fundersclub.com</a>
+		</p>
+		<br>
+		<p>
+			Private message: <a href="mailto:blakegearindev@gmail.com">blakegearindev@gmail.com</a>
+		</p>
+	</div>
+</div>

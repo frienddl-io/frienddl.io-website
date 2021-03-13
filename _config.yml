@@ -19,7 +19,7 @@ social:
   links:
 
 contact_settings:
-  form_action: 'https://formspree.io/mzbjqrjz'
+  form_action: 'https://formspree.io/f/xnqoebgk'
   confirmation_url: '/thanks'
   email_subject: 'Website form submission'
   send_button_text: 'Send Message'

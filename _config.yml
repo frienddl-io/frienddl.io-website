@@ -9,7 +9,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: images/logo.png
-description: Friend finder tool for skribbl.io
+description: Friend finder & score keeper for skribbl.io
 author:
   name: Blake Gearin
   email:
